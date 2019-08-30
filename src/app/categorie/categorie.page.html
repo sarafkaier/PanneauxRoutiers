@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>categorie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let item of listePanneaux">
+    <h1 *ngIf="item.firstTitle">{{item.categorie}}</h1>
+    <ion-list>
+      <ion-item >
+        
+          <ion-thumbnail slot="start">
+              <ion-img [src]="item.image"></ion-img>
+          </ion-thumbnail>
+        
+          <ion-label>{{item.title}}</ion-label>
+              
+      </ion-item>
+    </ion-list>
+  </div>
+  </ion-content>

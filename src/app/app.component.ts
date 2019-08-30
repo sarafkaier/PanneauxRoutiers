@@ -17,9 +17,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Liste des panneaux',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Liste des catégories',
+      url: '/categorie',
+      icon: 'book'
     }
   ];
 

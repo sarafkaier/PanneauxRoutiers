@@ -4,18 +4,20 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Liste des panneaux 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
+    <ion-item *ngFor="let item of listePanneaux">
+        <ion-thumbnail slot="start">
+            <ion-img [src]="item.image"></ion-img>
+        </ion-thumbnail>
+        <div>
+        <h3>{{item.title}}</h3>
+        <div>{{item.comment}}</div>
       </div>
     </ion-item>
   </ion-list>
