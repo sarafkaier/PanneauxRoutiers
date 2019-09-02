@@ -1,5 +1,7 @@
 {
   "name": "Quizz_Code",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

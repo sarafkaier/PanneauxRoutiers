@@ -16,7 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
   },
   { path: 'liste-panneaux', loadChildren: './liste-panneaux/liste-panneaux.module#ListePanneauxPageModule' },
-  { path: 'categorie', loadChildren: './categorie/categorie.module#CategoriePageModule' }
+  { path: 'categorie', loadChildren: './categorie/categorie.module#CategoriePageModule' },
+  { path: 'quiz-home', loadChildren: './quiz-home/quiz-home.module#QuizHomePageModule' },
+  { path: 'quiz-question', loadChildren: './quiz-question/quiz-question.module#QuizQuestionPageModule' },
+  { path: 'quiz-result', loadChildren: './quiz-result/quiz-result.module#QuizResultPageModule' }
 ];
 
 @NgModule({

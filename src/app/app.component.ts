@@ -25,7 +25,12 @@ export class AppComponent {
       title: 'Liste des catégories',
       url: '/categorie',
       icon: 'book'
+    },{
+      title: 'Quiz',
+      url: '/quiz-question',
+      icon: 'grid'
     }
+
   ];
 
   constructor(
