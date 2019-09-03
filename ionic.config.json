@@ -1,7 +1,8 @@
 {
   "name": "Quizz_Code",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

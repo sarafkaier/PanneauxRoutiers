@@ -12,21 +12,25 @@ export class QuestionService {
 	choix2: "une interdiction de tourner à droite",
 	choix3: "une interdiction de stationner",
 	choix4: "une interdiction de faire demi-tour",
-	bonChoix: 2
+	bonChoix: 2,
+	image: "https://www.magequip.com/media/catalog/product/cache/31a470d3411692d4c06a09bc75181cbc/6/7/676754.jpg"
 	},
 	{ id: 1, panneauId: 2, question: "Ce panneau indique:",
 	choix1: "une interdiction de tourner à gauche",
 	choix2: "une interdiction de tourner à droite",
 	choix3: "une interdiction de stationner",
 	choix4: "une interdiction de faire demi-tour",
-	bonChoix: 1
+	bonChoix: 1,
+	image: "https://www.signastore.fr/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/p/a/panneau_priorite_droite.jpg"
 	},
 	{ id: 2, panneauId: 3, question: "Ce panneau indique:",
 	choix1: "une interdiction de tourner à gauche",
 	choix2: "une interdiction de tourner à droite",
 	choix3: "une interdiction de stationner",
 	choix4: "une interdiction de faire demi-tour",
-	bonChoix: 4
+	bonChoix: 4,
+	image: "https://www.magequip.com/media/catalog/product/cache/31a470d3411692d4c06a09bc75181cbc/6/7/676832.jpg"
+
 	}
   ]
   constructor() { }

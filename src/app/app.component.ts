@@ -27,7 +27,7 @@ export class AppComponent {
       icon: 'book'
     },{
       title: 'Quiz',
-      url: '/quiz-question',
+      url: '/quiz-home',
       icon: 'grid'
     }
 

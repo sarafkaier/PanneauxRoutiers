@@ -6,3 +6,4 @@ export class Panneaux {
     categorie ?: string;
     firstTitle ?: boolean;
 }
+

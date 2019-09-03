@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'categorie', loadChildren: './categorie/categorie.module#CategoriePageModule' },
   { path: 'quiz-home', loadChildren: './quiz-home/quiz-home.module#QuizHomePageModule' },
   { path: 'quiz-question', loadChildren: './quiz-question/quiz-question.module#QuizQuestionPageModule' },
-  { path: 'quiz-result', loadChildren: './quiz-result/quiz-result.module#QuizResultPageModule' }
+  { path: 'quiz-result', loadChildren: './quiz-result/quiz-result.module#QuizResultPageModule' },
+  { path: 'detail', loadChildren: './detail/detail.module#DetailPageModule' }
 ];
 
 @NgModule({

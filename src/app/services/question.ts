@@ -7,5 +7,6 @@ export class QuizQuestion {
     choix3: string;
     choix4: string;
     bonChoix: number;
+    image:string;
 }
   

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { QuizQuestion} from '../services/question';
 import { Storage } from '@ionic/storage';
 import { QuestionService } from '../services/question.service';
@@ -14,7 +15,7 @@ export class QuizQuestionPage implements OnInit {
   selected = 0;
   score = 0;
 
-  constructor(private storage : Storage, private service : QuestionService) {
+  constructor(private storage : Storage, private service : QuestionService, private router : Router) {
     this.question = this.service.get(0);
   }
 
@@ -26,18 +27,20 @@ export class QuizQuestionPage implements OnInit {
     this.selected = $event.detail;
   }
 
-  onValidate($event) {
-    if (this.selected == this.question.bonChoix) {
+  onValidate() {
+    if (Number(this.selected) === this.question.bonChoix) {
       console.log("Bonne réponse");
       this.score++;
     }
     console.log("Bonne réponse");
     if (this.question.id < (this.service.count() - 1)) {
-      console.log("Suestion suivante")
+      console.log("Question suivante")
       this.question = this.service.get(this.question.id + 1)
     }
     else {
       this.storage.set('lastQuiz', this.score);
+      console.log(this.score);
+      this.router.navigate(['quiz-result']);
     }
   }
 
