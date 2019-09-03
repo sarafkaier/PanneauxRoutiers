@@ -24,7 +24,7 @@ export class QuizQuestionPage implements OnInit {
 
   onChange($event) {
     console.log($event.detail);
-    this.selected = $event.detail;
+    this.selected = $event.detail.value;
   }
 
   onValidate() {
